@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>九格宫-任务</title>
+<style>
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-size: 30px;
+}
+.box{
+	width: 100%;
+	padding:2.5% 0;
+}
+.box div{
+	width: 30%;
+	height: 5rem;
+	background: orange;
+	margin:0 0 2.5% 2.5%;
+	float: left;
+	border-radius: 10px;
+}
+</style>
+</head>
+<body>
+<div class="box">
+	<div>111</div>
+	<div>111</div>
+	<div>111</div>
+	<div>111</div>
+	<div>111</div>
+	<div>111</div>
+	<div>111</div>
+	<div>111</div>
+	<div>111</div>
+</div>
+<script type="text/javascript">
+		window.onresize = setFontSize;
+		window.onload = setFontSize;
+
+
+		function setFontSize(){
+			var windowWidth = document.documentElement.clientWidth;
+
+			var fontsize = windowWidth / (660 / 30);
+
+
+			document.documentElement.style.fontSize = fontsize + "px";
+		}
+
+</script>
+</body>
+</html>
